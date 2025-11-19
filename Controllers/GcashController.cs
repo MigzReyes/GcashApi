@@ -4,11 +4,11 @@ using GCashApi.Models;
 
 namespace GCashApi.Controllers;
 
-public class HomeController : Controller
+public class GCashController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<GCashController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public GCashController(ILogger<GCashController> logger)
     {
         _logger = logger;
     }
