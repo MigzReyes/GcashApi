@@ -27,7 +27,7 @@ public class PaymentController : Controller
 
         return Ok( new
         {
-            status = "Success", redirect = Url.Action("GcashMain", "GCash")
+            status = "Success", redirect = "https://prettied-punchily-angeles.ngrok-free.dev/" 
         });
     }
 }
