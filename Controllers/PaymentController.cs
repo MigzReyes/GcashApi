@@ -25,6 +25,9 @@ public class PaymentController : Controller
             Console.WriteLine("HttpContext is not available");
         }
 
-        return RedirectToAction("GCashMain", "GCash");
+        return Ok( new
+        {
+            status = "Success", redirect = Url.Action("GcashMain", "GCash")
+        });
     }
 }
